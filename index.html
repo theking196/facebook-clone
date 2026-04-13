@@ -19,7 +19,12 @@
     }
     
     .left { width: 580px; padding-top: 60px; }
-    .left img { width: 200px; }
+    .logo-text { 
+      font-size: 48px; 
+      font-weight: bold; 
+      color: #1877f2; 
+      font-family: Arial, sans-serif;
+    }
     .left p { font-size: 28px; color: #1c1e21; width: 500px; margin-top: 10px; }
     
     .right { width: 396px; }
@@ -42,14 +47,8 @@
     
     .clone-badge { position: fixed; bottom: 20px; right: 20px; background: #2563eb; color: white; padding: 10px 20px; border-radius: 25px; font-size: 14px; }
     
-    /* ===== MOBILE RESPONSIVE ===== */
     @media (max-width: 900px) {
-      .container {
-        flex-direction: column;
-        align-items: center;
-        padding: 30px 20px;
-        gap: 30px;
-      }
+      .container { flex-direction: column; align-items: center; padding: 30px 20px; gap: 30px; }
       .left { width: 100%; text-align: center; padding-top: 20px; }
       .left p { font-size: 20px; width: 100%; }
       .right { width: 100%; max-width: 400px; }
@@ -57,7 +56,7 @@
     
     @media (max-width: 500px) {
       .container { padding: 20px 10px; }
-      .left img { width: 150px; }
+      .logo-text { font-size: 36px; }
       .left p { font-size: 16px; }
       .login-box { padding: 15px; }
       .login-box input { padding: 12px; font-size: 16px; }
@@ -72,7 +71,7 @@
 <body>
   <div class="container">
     <div class="left">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Facebook_Logo_%282016%29.svg/256px-Facebook_Logo_%282016%29.svg.png" alt="Facebook">
+      <div class="logo-text">facebook</div>
       <p>Connect with friends and the world around you on Facebook.</p>
     </div>
     <div class="right">
